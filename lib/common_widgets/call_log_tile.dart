@@ -26,9 +26,10 @@ class _CallLogTileState extends State<CallLogTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 0),
-      height: 100,
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 10),
+      // height: 100,
       width: double.infinity,
+      color: Colors.white,
       child: Row(
         children: [
           CircleAvatar(
@@ -95,10 +96,11 @@ class _CallLogTileState extends State<CallLogTile> {
           Spacer(),
           Icon(
             Icons.info_outline,
-            size: 35,
+            size: 30,
             color: Color(0xFF808080),
             weight: 2,
-          )
+          ),
+          15.widthBox
         ],
       ),
     );

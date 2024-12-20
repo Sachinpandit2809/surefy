@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:surefy/screens/contact_screen.dart';
+import 'package:surefy/screens/home_nav.dart';
+import 'package:surefy/screens/profile_screen.dart';
 import 'package:surefy/screens/splash_screen.dart';
 
 void main() {
@@ -18,6 +21,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const SplashScreen());
+        // home: const SplashScreen());
+        home: const HomeNav());
   }
 }

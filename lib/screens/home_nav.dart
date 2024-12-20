@@ -5,6 +5,7 @@ import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/screens/access_log_screen.dart';
 import 'package:surefy/screens/connects_screen.dart';
+import 'package:surefy/screens/contact_screen.dart';
 
 class HomeNav extends StatefulWidget {
   const HomeNav({super.key});
@@ -17,7 +18,7 @@ class _HomeNavState extends State<HomeNav> {
   int selectedIndex = 0;
   List pages = [
     ConnectsScreen(),
-    Text("part 2"),
+    ContactScreen(),
     Text("part 3"),
     Text("part 4")
   ];
