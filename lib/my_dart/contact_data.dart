@@ -3,6 +3,8 @@ List<Map<String, dynamic>> contact = [
     "name": "akshita",
     "mobile": "6438929467",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "8907674321",
     "call_log": [
       // {
@@ -19,6 +21,8 @@ List<Map<String, dynamic>> contact = [
     "name": "rahul",
     "mobile": "9876543210",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "8912345678",
     "call_log": [
       // {
@@ -35,6 +39,8 @@ List<Map<String, dynamic>> contact = [
     "name": "priya",
     "mobile": "7654321980",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "9812345671",
     "call_log": [
       // {
@@ -51,6 +57,8 @@ List<Map<String, dynamic>> contact = [
     "name": "megha",
     "mobile": "6543219807",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "8910123456",
     "call_log": [
       // {
@@ -67,6 +75,8 @@ List<Map<String, dynamic>> contact = [
     "name": "vikram",
     "mobile": "8765432109",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7890123456",
     "call_log": [
       // {
@@ -83,6 +93,8 @@ List<Map<String, dynamic>> contact = [
     "name": "riya",
     "mobile": "5432198076",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "6789012345",
     "call_log": [
       // {
@@ -99,6 +111,8 @@ List<Map<String, dynamic>> contact = [
     "name": "neha",
     "mobile": "4321980765",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "5678901234",
     "call_log": [
       // {
@@ -115,6 +129,8 @@ List<Map<String, dynamic>> contact = [
     "name": "kavita",
     "mobile": "3219807654",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "4567890123",
     "call_log": [
       // {
@@ -131,6 +147,8 @@ List<Map<String, dynamic>> contact = [
     "name": "aman",
     "mobile": "2198076543",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "3456789012",
     "call_log": [
       // {
@@ -147,6 +165,8 @@ List<Map<String, dynamic>> contact = [
     "name": "tina",
     "mobile": "1980765432",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "2345678901",
     "call_log": [
       // {
@@ -163,6 +183,8 @@ List<Map<String, dynamic>> contact = [
     "name": "akash",
     "mobile": "9898989898",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "8787878787",
     "call_log": [
       // {
@@ -179,6 +201,8 @@ List<Map<String, dynamic>> contact = [
     "name": "sakshi",
     "mobile": "8765432123",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "9876543210",
     "call_log": [
       // {
@@ -195,6 +219,8 @@ List<Map<String, dynamic>> contact = [
     "name": "vikas",
     "mobile": "9897675432",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "9889876543",
     "call_log": [
       // {
@@ -211,6 +237,8 @@ List<Map<String, dynamic>> contact = [
     "name": "manish",
     "mobile": "7676544321",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7678765432",
     "call_log": [
       // {
@@ -227,6 +255,8 @@ List<Map<String, dynamic>> contact = [
     "name": "ravi",
     "mobile": "7876543219",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "8769876542",
     "call_log": [
       // {
@@ -243,6 +273,8 @@ List<Map<String, dynamic>> contact = [
     "name": "anuj",
     "mobile": "7989876543",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7865432198",
     "call_log": [
       // {
@@ -259,6 +291,8 @@ List<Map<String, dynamic>> contact = [
     "name": "nidhi",
     "mobile": "7679876532",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7679875431",
     "call_log": [
       // {
@@ -275,6 +309,8 @@ List<Map<String, dynamic>> contact = [
     "name": "swati",
     "mobile": "7659873214",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "9877654321",
     "call_log": [
       // {
@@ -291,6 +327,8 @@ List<Map<String, dynamic>> contact = [
     "name": "kiran",
     "mobile": "7896785432",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7898765432",
     "call_log": [
       // {
@@ -307,6 +345,8 @@ List<Map<String, dynamic>> contact = [
     "name": "raj",
     "mobile": "6765432123",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "6754321987",
     "call_log": [
       // {
@@ -323,6 +363,8 @@ List<Map<String, dynamic>> contact = [
     "name": "parul",
     "mobile": "7654321765",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7865432198",
     "call_log": [
       // {
@@ -339,6 +381,8 @@ List<Map<String, dynamic>> contact = [
     "name": "mehul",
     "mobile": "6785432101",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "6754321098",
     "call_log": [
       // {
@@ -355,6 +399,8 @@ List<Map<String, dynamic>> contact = [
     "name": "arjun",
     "mobile": "7890987654",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "6780987654",
     "call_log": [
       // {
@@ -371,6 +417,8 @@ List<Map<String, dynamic>> contact = [
     "name": "vishal",
     "mobile": "7689765432",
     "tag": "Business",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7898765432",
     "call_log": [
       // {
@@ -387,6 +435,8 @@ List<Map<String, dynamic>> contact = [
     "name": "pooja",
     "mobile": "7895432190",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7897654321",
     "call_log": [
       // {
@@ -403,6 +453,8 @@ List<Map<String, dynamic>> contact = [
     "name": "rihan",
     "mobile": "6543298765",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7654321987",
     "call_log": [
       // {
@@ -419,6 +471,8 @@ List<Map<String, dynamic>> contact = [
     "name": "sneha",
     "mobile": "6786543219",
     "tag": "Personal",
+    "message": "this is demo message ",
+    "message_time": "10:00",
     "work": "7890987654",
     "call_log": [
       // {

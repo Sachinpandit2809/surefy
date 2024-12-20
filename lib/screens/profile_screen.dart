@@ -98,7 +98,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       OtherTile(
                           title: "Delete Contact",
                           color: Colors.red,
-                          icon: Icons.heart_broken),
+                          icon: Icons.delete_outline_rounded),
                       _buildSectionTitle("Call History"),
                       Padding(
                         padding: const EdgeInsets.symmetric(

@@ -6,6 +6,8 @@ import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/screens/access_log_screen.dart';
 import 'package:surefy/screens/connects_screen.dart';
 import 'package:surefy/screens/contact_screen.dart';
+import 'package:surefy/screens/message_screen.dart';
+import 'package:surefy/screens/tab_bar_screen.dart';
 
 class HomeNav extends StatefulWidget {
   const HomeNav({super.key});
@@ -19,8 +21,8 @@ class _HomeNavState extends State<HomeNav> {
   List pages = [
     ConnectsScreen(),
     ContactScreen(),
-    Text("part 3"),
-    Text("part 4")
+    MessageScreen(),
+    TabBarScreen()
   ];
   @override
   Widget build(BuildContext context) {

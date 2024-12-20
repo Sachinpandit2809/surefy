@@ -6,39 +6,41 @@ import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
 import 'package:surefy/screens/access_log_screen.dart';
 
-class CallLogTile extends StatefulWidget {
-  String name, number, callTagType, tag, time;
+class MessageTile extends StatefulWidget {
+  String name, number, message, tag, time;
 
-  CallLogTile({
+  MessageTile({
     super.key,
     required this.name,
     required this.number,
-    required this.callTagType,
+    required this.message,
     required this.tag,
     required this.time,
   });
 
   @override
-  State<CallLogTile> createState() => _CallLogTileState();
+  State<MessageTile> createState() => _MessageTileState();
 }
 
-class _CallLogTileState extends State<CallLogTile> {
+class _MessageTileState extends State<MessageTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 10),
-      // height: 100,
+      height: 80,
       width: double.infinity,
       color: Colors.white,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CircleAvatar(
             radius: 25,
             backgroundColor: widget.tag == "Personal"
                 ? AppColors.buttonColor.withOpacity(0.3)
-                : const Color(0xFF16BAC4).withOpacity(0.3),
+                : Color(0xFF16BAC4).withOpacity(0.3),
             child: widget.tag == "Personal"
-                ? const Icon(
+                ? Icon(
                     Icons.person_rounded,
                     color: AppColors.buttonColor,
                   )
@@ -64,41 +66,19 @@ class _CallLogTileState extends State<CallLogTile> {
                 ],
               ),
               5.heightBox,
-              Row(
-                children: [
-                  widget.callTagType == "Missed"
-                      ?const Icon(
-                          Icons.call_missed_rounded,
-                          color: Colors.red,
-                        )
-                      : widget.callTagType == "Incoming"
-                          ? widget.callTagType == "Outgoing"
-                              ?const Icon(
-                                  Icons.call_made_outlined,
-                                  color: Color(0xFF00BF20),
-                                )
-                              : const Icon(
-                                  Icons.call_received_rounded,
-                                  color: Color(0xff5FBFF9),
-                                )
-                          : Image.asset(R.ASSETS_IMAGES_SHIELD_CROSS_PNG),
-                  10.widthBox,
-                  Text(
-                    widget.callTagType,
-                    style:const TextStyle(color: Color(0xFF808080)),
-                  ),
-                  10.widthBox,
-                  Text(widget.time, style: const TextStyle(color: Color(0xFF808080))),
-                ],
-              )
+              Text(widget.message, style: TextStyle(color: Color(0xFF808080))),
             ],
           ),
-        const  Spacer(),
-        const  Icon(
-            Icons.info_outline,
-            size: 30,
-            color: Color(0xFF808080),
-            weight: 2,
+          Spacer(),
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 15,
+                child: Text("1"),
+              ),
+              10.heightBox,
+              Text(widget.time, style: TextStyle(color: Color(0xFF808080))),
+            ],
           ),
           15.widthBox
         ],
