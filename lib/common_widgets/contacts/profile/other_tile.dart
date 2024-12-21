@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:surefy/common_widgets/call_log_tile.dart';
-import 'package:surefy/my_dart/contact_data.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
 
+// ignore: must_be_immutable
 class OtherTile extends StatefulWidget {
   String title;
   Color color;
-  IconData icon;
+  Widget icon;
   OtherTile({
     super.key,
     required this.title,
@@ -33,10 +32,7 @@ class _OtherTileState extends State<OtherTile> {
       ),
       child: Row(
         children: [
-          Icon(
-            widget.icon,
-            color: widget.color,
-          ),
+          widget.icon,
           20.widthBox,
           Text(
             widget.title,

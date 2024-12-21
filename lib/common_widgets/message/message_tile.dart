@@ -4,7 +4,7 @@ import 'package:surefy/common_widgets/flexible_round_buttons.dart';
 import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
-import 'package:surefy/screens/access_log_screen.dart';
+import 'package:surefy/screens/splash_screens/access_log_screen.dart';
 
 class MessageTile extends StatefulWidget {
   String name, number, message, tag, time;

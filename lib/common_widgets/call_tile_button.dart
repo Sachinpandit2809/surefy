@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:surefy/resource/styles/app_colors.dart';
-import 'package:surefy/resource/styles/k_text_style.dart';
 
+// ignore: must_be_immutable
 class CallTileButton extends StatefulWidget {
   Color btnColor;
   TextStyle style;

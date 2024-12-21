@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:surefy/common_widgets/call_tile_button.dart';
-import 'package:surefy/common_widgets/flexible_round_buttons.dart';
 import 'package:surefy/const/resource.dart';
-import 'package:surefy/my_dart/contact_data.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
-import 'package:surefy/screens/access_log_screen.dart';
-import 'package:surefy/screens/profile_screen.dart';
 
+// ignore: must_be_immutable
 class ContactTile extends StatefulWidget {
   String name, tag;
   Map<String, dynamic> personalContactData;
@@ -40,7 +37,7 @@ class _ContactTileState extends State<ContactTile> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 25,
+              radius: 24,
               backgroundColor: widget.tag == "Personal"
                   ? AppColors.buttonColor.withOpacity(0.3)
                   : Color(0xFF16BAC4).withOpacity(0.3),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surefy/common_widgets/call_log_tile.dart';
-import 'package:surefy/common_widgets/text_icon_button.dart';
+
 import 'package:surefy/my_dart/call_data.dart';
-import 'package:surefy/resource/ext/num_ext.dart';
-import 'package:surefy/screens/access_log_screen.dart';
 
 class ConnectsScreen extends StatefulWidget {
   const ConnectsScreen({super.key});
@@ -17,32 +15,9 @@ class _ConnectsScreenState extends State<ConnectsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                TextIconButton(
-                  title: "Call",
-                  onPress: () {},
-                ),
-                TextIconButton(
-                  title: "Contacts",
-                  onPress: () {},
-                ),
-                TextIconButton(
-                  title: "Messages",
-                  onPress: () {},
-                ),
-                TextIconButton(
-                  title: "Favourites",
-                  onPress: () {},
-                )
-              ],
-            ),
-          ),
-          10.heightBox,
           Expanded(
             child: ListView.builder(
                 itemCount: callData.length,

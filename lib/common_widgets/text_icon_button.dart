@@ -15,21 +15,23 @@ class _TextIconButtonState extends State<TextIconButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15),
-      decoration: BoxDecoration(
-          color: AppColors.buttonColor,
-          borderRadius: BorderRadius.circular(18)),
-      padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
+      // margin: EdgeInsets.symmetric(horizontal: 15),
+      // decoration: BoxDecoration(
+      //     color: AppColors.buttonColor,
+      //     borderRadius: BorderRadius.circular(18)),
+      // padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             widget.title,
-            style: KTextStyle.k_14.copyWith(color: AppColors.whiteText),
+            style: KTextStyle.k_14.copyWith(color: AppColors.grey),
           ),
           Icon(
             Icons.keyboard_arrow_down_sharp,
             size: 20,
-            color: AppColors.whiteText,
+            color: AppColors.grey,
           )
         ],
       ),
@@ -58,8 +60,8 @@ List<Map<String, dynamic>> data = [
     "callTagIcon": "Incoming",
     "tag": "Personal",
     "time": "9:00"
-  }, 
-    {
+  },
+  {
     "name": "",
     "number": "9977334422",
     "callTagIcon": "Incoming",

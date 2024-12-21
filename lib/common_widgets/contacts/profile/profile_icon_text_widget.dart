@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
 
+// ignore: must_be_immutable
 class ProfileIconTextWidget extends StatefulWidget {
   String title;
-  IconData icon;
+  Widget icon;
   VoidCallback onPress;
   @override
   ProfileIconTextWidget(
@@ -30,7 +31,7 @@ class _ProfileIconTextWidgetState extends State<ProfileIconTextWidget> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(widget.icon, color: Color(0xFF808080)),
+            widget.icon,
             Text(
               widget.title,
               style: KTextStyle.k_14.copyWith(color: Color(0xFF808080)),

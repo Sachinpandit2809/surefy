@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:surefy/common_widgets/profile/number_tile.dart';
-import 'package:surefy/common_widgets/profile/other_tile.dart';
-import 'package:surefy/common_widgets/profile/profile_icon_text_widget.dart';
+import 'package:surefy/common_widgets/contacts/profile/number_tile.dart';
+import 'package:surefy/common_widgets/contacts/profile/other_tile.dart';
+import 'package:surefy/common_widgets/contacts/profile/profile_icon_text_widget.dart';
 import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
 
-class ProfileScreen extends StatefulWidget {
+// ignore: must_be_immutable
+class ContactProfileScreen extends StatefulWidget {
   Map<String, dynamic> personalContactData;
-  ProfileScreen({super.key, required this.personalContactData});
+  ContactProfileScreen({super.key, required this.personalContactData});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<ContactProfileScreen> createState() => _ContactProfileScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _ContactProfileScreenState extends State<ContactProfileScreen> {
   @override
   Widget build(BuildContext context) {
     double mediaHeight = MediaQuery.of(context).size.height;
@@ -56,11 +57,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               SizedBox(height: mediaHeight * .1),
-              Container(
-                height: 20,
-                width: 20,
-                color: Colors.blue,
-              ),
+              Image.asset(R.ASSETS_IMAGES_ICON_SHIELD_PNG),
               const SizedBox(height: 5),
               Text("${widget.personalContactData["name"]}",
                   style: KTextStyle.k_16),
@@ -68,14 +65,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ProfileIconTextWidget(
-                      title: "Call", icon: Icons.call, onPress: () {}),
+                      title: "Call",
+                      icon: Icon(
+                        Icons.call,
+                        color: Color(0xFF808080),
+                      ),
+                      onPress: () {}),
                   ProfileIconTextWidget(
                       title: "Message",
-                      icon: Icons.message_sharp,
+                      icon: Image.asset(R.ASSETS_IMAGES_ICON_MESSAGE_ICON_PNG),
                       onPress: () {}),
                   ProfileIconTextWidget(
                       title: "Notes",
-                      icon: Icons.event_note_outlined,
+                      icon: Image.asset(R.ASSETS_IMAGES_ICON_NOTES_PNG),
                       onPress: () {}),
                 ],
               ),
@@ -94,11 +96,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           title: "Work"),
                       _buildSectionTitle("Other"),
                       OtherTile(
-                          title: "Add To Contact", icon: Icons.heart_broken),
+                          title: "Add To Contact",
+                          icon: Image.asset(R.ASSETS_IMAGES_ICON_HEART_PNG)),
                       OtherTile(
                           title: "Delete Contact",
                           color: Colors.red,
-                          icon: Icons.delete_outline_rounded),
+                          icon: Image.asset(R.ASSETS_IMAGES_ICON_TRASH_PNG)),
                       _buildSectionTitle("Call History"),
                       Padding(
                         padding: const EdgeInsets.symmetric(
@@ -119,8 +122,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 widget.personalContactData["call_log"][index]
                                             ["call_type"] ==
                                         "missed"
-                                    ? const Icon(Icons.call_missed_rounded,
-                                        color: Colors.red)
+                                    ? Image.asset(
+                                        R.ASSETS_IMAGES_ICON_MISSED_PNG)
                                     : widget.personalContactData["call_log"]
                                                 [index]["call_type"] ==
                                             "incoming"
@@ -164,7 +167,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   Widget _buildSectionTitle(String title) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
+      padding: const EdgeInsets.only(left: 25, top: 10),
       child: Text(title, style: KTextStyle.k_16),
     );
   }

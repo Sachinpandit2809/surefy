@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:surefy/screens/contact_screen.dart';
-import 'package:surefy/screens/home_nav.dart';
-import 'package:surefy/screens/profile_screen.dart';
-import 'package:surefy/screens/splash_screen.dart';
+import 'package:surefy/screens/support_screens/home_nav.dart';
 
 void main() {
   runApp(const MyApp());

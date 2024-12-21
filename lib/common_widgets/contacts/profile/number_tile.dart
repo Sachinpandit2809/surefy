@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
 
+// ignore: must_be_immutable
 class NumberTile extends StatefulWidget {
   String number, title;
   NumberTile({
@@ -43,14 +45,12 @@ class _NumberTileState extends State<NumberTile> {
               onPressed: () {},
               icon: Icon(
                 Icons.call,
-                size: 30,
+                size: 25,
+                color: Color(0xFF808080),
               )),
           IconButton(
               onPressed: () {},
-              icon: Icon(
-                Icons.message,
-                size: 30,
-              ))
+              icon: Image.asset(R.ASSETS_IMAGES_ICON_MESSAGE_ICON_PNG))
         ],
       ),
     );

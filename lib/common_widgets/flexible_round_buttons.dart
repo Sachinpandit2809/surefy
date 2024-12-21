@@ -31,7 +31,7 @@ class _FlexibleRoundButtonsState extends State<FlexibleRoundButtons> {
         height: widget.height,
         width: widget.width,
         decoration: BoxDecoration(
-          color: AppColors.buttonColor,
+          color: widget.btnColor,
           borderRadius: BorderRadius.circular(60),
         ),
         child: Center(child: Text(widget.title, style: widget.style)),

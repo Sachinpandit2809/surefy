@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
-import 'package:surefy/screens/access_log_screen.dart';
+import 'package:surefy/screens/splash_screens/access_log_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

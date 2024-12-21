@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:surefy/common_widgets/flexible_round_buttons.dart';
 import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
-import 'package:surefy/resource/styles/app_colors.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
-import 'package:surefy/screens/home_nav.dart';
+import 'package:surefy/screens/support_screens/home_nav.dart';
 
 class AccessLogScreen extends StatefulWidget {
   const AccessLogScreen({super.key});

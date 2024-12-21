@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:surefy/common_widgets/call_tile_button.dart';
-import 'package:surefy/common_widgets/flexible_round_buttons.dart';
 import 'package:surefy/const/resource.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/app_colors.dart';
-import 'package:surefy/screens/access_log_screen.dart';
 
+// ignore: must_be_immutable
 class CallLogTile extends StatefulWidget {
   String name, number, callTagType, tag, time;
 
@@ -33,7 +32,7 @@ class _CallLogTileState extends State<CallLogTile> {
       child: Row(
         children: [
           CircleAvatar(
-            radius: 25,
+            radius: 24,
             backgroundColor: widget.tag == "Personal"
                 ? AppColors.buttonColor.withOpacity(0.3)
                 : const Color(0xFF16BAC4).withOpacity(0.3),
@@ -67,13 +66,10 @@ class _CallLogTileState extends State<CallLogTile> {
               Row(
                 children: [
                   widget.callTagType == "Missed"
-                      ?const Icon(
-                          Icons.call_missed_rounded,
-                          color: Colors.red,
-                        )
+                      ? Image.asset(R.ASSETS_IMAGES_ICON_MISSED_PNG)
                       : widget.callTagType == "Incoming"
                           ? widget.callTagType == "Outgoing"
-                              ?const Icon(
+                              ? const Icon(
                                   Icons.call_made_outlined,
                                   color: Color(0xFF00BF20),
                                 )
@@ -85,16 +81,17 @@ class _CallLogTileState extends State<CallLogTile> {
                   10.widthBox,
                   Text(
                     widget.callTagType,
-                    style:const TextStyle(color: Color(0xFF808080)),
+                    style: const TextStyle(color: Color(0xFF808080)),
                   ),
                   10.widthBox,
-                  Text(widget.time, style: const TextStyle(color: Color(0xFF808080))),
+                  Text(widget.time,
+                      style: const TextStyle(color: Color(0xFF808080))),
                 ],
               )
             ],
           ),
-        const  Spacer(),
-        const  Icon(
+          const Spacer(),
+          const Icon(
             Icons.info_outline,
             size: 30,
             color: Color(0xFF808080),

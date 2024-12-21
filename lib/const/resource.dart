@@ -30,6 +30,54 @@ class R {
   static const String ASSETS_IMAGES_FLYING_PHONE_PNG =
       'assets/images/flying_phone.png';
 
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\Layer%202.png)
+  static const String ASSETS_IMAGES_ICON_LAYER_2_PNG =
+      'assets/images/icon/Layer 2.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\Vector.png)
+  static const String ASSETS_IMAGES_ICON_VECTOR_PNG =
+      'assets/images/icon/Vector.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\close-circle.png)
+  static const String ASSETS_IMAGES_ICON_CLOSE_CIRCLE_PNG =
+      'assets/images/icon/close-circle.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\element-equal.png)
+  static const String ASSETS_IMAGES_ICON_ELEMENT_EQUAL_PNG =
+      'assets/images/icon/element-equal.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\heart.png)
+  static const String ASSETS_IMAGES_ICON_HEART_PNG =
+      'assets/images/icon/heart.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\message-icon.png)
+  static const String ASSETS_IMAGES_ICON_MESSAGE_ICON_PNG =
+      'assets/images/icon/message-icon.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\message.png)
+  static const String ASSETS_IMAGES_ICON_MESSAGE_PNG =
+      'assets/images/icon/message.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\missed.png)
+  static const String ASSETS_IMAGES_ICON_MISSED_PNG =
+      'assets/images/icon/missed.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\notes.png)
+  static const String ASSETS_IMAGES_ICON_NOTES_PNG =
+      'assets/images/icon/notes.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\profile.png)
+  static const String ASSETS_IMAGES_ICON_PROFILE_PNG =
+      'assets/images/icon/profile.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\shield.png)
+  static const String ASSETS_IMAGES_ICON_SHIELD_PNG =
+      'assets/images/icon/shield.png';
+
+  /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\icon\trash.png)
+  static const String ASSETS_IMAGES_ICON_TRASH_PNG =
+      'assets/images/icon/trash.png';
+
   /// ![preview](file://C:\Users\dream\Desktop\surefy\assets\images\message.png)
   static const String ASSETS_IMAGES_MESSAGE_PNG = 'assets/images/message.png';
 
