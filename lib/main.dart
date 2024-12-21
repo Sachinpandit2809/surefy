@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:surefy/screens/support_screens/home_nav.dart';
+import 'package:surefy/screens/splash_screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Surefy.Ai',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
           useMaterial3: true,
         ),
-        // home: const SplashScreen());
-        home: const HomeNav());
+        home: const SplashScreen());
+       
   }
 }
