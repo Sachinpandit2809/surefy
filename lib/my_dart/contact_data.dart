@@ -1,3 +1,5 @@
+import 'package:contacts_service/contacts_service.dart';
+
 List<Map<String, dynamic>> contact = [
   {
     "name": "akshita",
@@ -487,14 +489,24 @@ List<Map<String, dynamic>> contact = [
   }
 ];
 
-void main() {
-  List<Map<String, dynamic>> data = ContactData().contactData();
-  dynamic d = data[0];
-  print(d["call_log"].length);
-}
 
 class ContactData {
+  
   List<Map<String, dynamic>> contactData() {
     return contact;
   }
 }
+
+
+class CD{
+   da() async{
+List<Contact> contacts = await ContactsService.getContacts();
+return contacts;
+
+  }
+}
+// void main() {
+// var cd =  CD().da();
+
+//   print(cd);
+// }

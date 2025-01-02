@@ -1,6 +1,8 @@
+import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:surefy/common_widgets/flexible_round_buttons.dart';
 import 'package:surefy/const/resource.dart';
+import 'package:surefy/my_dart/contact_data.dart';
 import 'package:surefy/resource/ext/num_ext.dart';
 import 'package:surefy/resource/styles/k_text_style.dart';
 import 'package:surefy/screens/support_screens/home_nav.dart';
@@ -76,12 +78,15 @@ class _AccessLogScreenState extends State<AccessLogScreen> {
                   75.heightBox,
                   FlexibleRoundButtons(
                     title: "Allow Access",
-                    onPress: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomeNav(),
-                          ));
+                    onPress: () async {
+                      List<Contact> contacts =
+                          await ContactsService.getContacts();
+                      debugPrint(contacts.toString());
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => HomeNav(),
+                      //     ));
                     },
                   )
                 ],
